@@ -1,0 +1,11 @@
+Cloud platforms like Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) provide on-demand computing resources over the internet, so companies do not need to buy and maintain their own physical servers.
+
+Amazon S3, or Simple Storage Service, is an object storage service used to store files of any type, such as CSV files, images, or backups. Data in S3 is organized into buckets, and each file is called an object.
+
+AWS Lambda is a serverless compute service that lets you run code in response to events, such as a new file being uploaded to S3, without provisioning or managing servers. You are only charged for the compute time you actually use.
+
+Amazon Athena allows users to run standard SQL queries directly on data stored in S3, without needing to load it into a separate database first. This is useful for quickly analyzing large amounts of raw data.
+
+Google BigQuery is a fully managed data warehouse that allows you to run fast SQL queries on very large datasets, often billions of rows, using a pay-per-query pricing model.
+
+Cloud platforms also offer free tiers, which allow developers and students to try out these services at no cost, usually with some limits on usage per month. This makes it possible to build and test small projects without incurring charges.

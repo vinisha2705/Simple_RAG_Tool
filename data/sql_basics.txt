@@ -1,0 +1,11 @@
+SQL, or Structured Query Language, is used to communicate with relational databases. It allows users to create, read, update, and delete data stored in tables.
+
+The SELECT statement is used to retrieve data from a table. For example, SELECT name, age FROM customers WHERE age > 30 returns the name and age of every customer older than 30.
+
+JOINs are used to combine rows from two or more tables based on a related column. An INNER JOIN returns only the rows where there is a match in both tables. A LEFT JOIN returns all rows from the left table and the matching rows from the right table, filling in NULL where there is no match.
+
+GROUP BY is used together with aggregate functions like COUNT, SUM, AVG, MIN, and MAX to summarize data. For example, SELECT department, AVG(salary) FROM employees GROUP BY department calculates the average salary for each department.
+
+Window functions, such as ROW_NUMBER(), RANK(), and SUM() OVER(PARTITION BY ...), allow calculations across a set of rows related to the current row without collapsing the result into a single row per group. They are commonly used for running totals, rankings, and comparing a row to the previous or next row.
+
+Indexes are used to speed up queries by allowing the database to find rows without scanning the entire table. However, indexes take up extra storage and can slow down write operations, so they should be added thoughtfully.

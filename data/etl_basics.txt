@@ -1,0 +1,11 @@
+ETL stands for Extract, Transform, Load. It is a process used to move data from source systems into a data warehouse or database for analysis.
+
+Extract: In this step, raw data is pulled from one or more sources. Sources can include CSV files, APIs, databases, or logs. The goal of extraction is simply to get the data out of its original location without changing it.
+
+Transform: This is where the raw data is cleaned and reshaped. Common transformation steps include removing duplicate rows, handling missing values, converting data types (for example, turning a text date into a proper date object), renaming columns, and aggregating data (for example, summing sales by month).
+
+Load: The final step is writing the transformed data into its destination, such as a SQL database, a data warehouse like Snowflake or BigQuery, or a file system like Amazon S3. Loading can be done in full (overwriting old data) or incrementally (only adding new records).
+
+ETL pipelines are usually automated and scheduled to run daily, hourly, or in real time depending on business needs. Tools commonly used to build ETL pipelines include Python scripts, Apache Airflow for scheduling, and cloud-native services like AWS Glue or Azure Data Factory.
+
+A well-designed ETL pipeline should be reliable, easy to monitor, and able to handle errors gracefully, for example by logging failed records instead of crashing the entire pipeline.
